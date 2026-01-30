@@ -1,8 +1,8 @@
 import {move} from './move.js';
 import {DIRECTIONS} from './constants.js';
 
-export function checkGameOver(board){
+export function checkGameOver(tiles){
     return !Object.values(DIRECTIONS).some(dir=>
-        move(board,dir).moved
+        move(tiles,dir).moved
     );
 }
